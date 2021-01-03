@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TODO LIST</title>
+</head>
+<body>
+    <input type="text" id="nextitem">
+    <input type="button" value="ADD" id="additem">
+    
+    <ul id="todoitem">
+        <li>Task 1</li>
+    </ul>
+
+    <script>
+        let todoItem = document.getElementById('todoitem')
+        let addItem = document.getElementById('additem')
+        let nextItem = document.getElementById('nextitem')
+
+        addItem.onclick = function(){
+            let item = nextItem.value;
+
+            // Method 1 (Inefficient hai, sara ka sara list reload hota hai )
+            // todoItem.innerHTML += '<li>' + item + '</li>'  
+            
+            // Method 2 (Efficeient hai yaha sirf ye item reload ho raha hai )
+            let newTask = document.createElement("li")
+            newTask.innerText = item;
+            todoItem.appendChild(newTask)
+        }
+    </script>
+</body>
+</html>
