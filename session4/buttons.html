@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Selector</title>
+    <style>
+        .container{
+            background-color: lightcyan;
+            border: 2px solid red;
+            padding: 30px;
+            margin: 20px;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        a:hover{
+            background-color: #2effe3;
+            color: black;
+        }
+        .btn{
+            background-color: #d9efec;
+            padding: 5px;
+            border: none;
+            cursor: pointer;
+            font-size: small;
+            font-weight: bold;
+            border-radius: 3px;
+        }
+        button:hover{
+            background-color: #2effe3;
+            color: black;
+        }
+        button:visited{
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container" id="cont1">
+        <h3>This is my heading</h3>
+        <p id="para1">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius sunt tempore molestias earum omnis eum quod voluptatum quas, repellendus, alias dolores, amet ullam iusto nulla! Accusantium aperiam totam explicabo cumque, maiores quam repudiandae quisquam assumenda illo pariatur perspiciatis odio rerum nam praesentium voluptas non laudantium tenetur deleniti aliquid necessitatibus ratione?
+        </p>
+        <a href="" class="btn">Read More</a>
+        <button class="btn">Contact Us</button>
+    </div>
+</body>
+</html>
