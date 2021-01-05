@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar 1</title>
+    <style>
+        .navbar{
+            background-color: rgb(153, 214, 214);
+            border-radius: 30px;
+        }
+        .navbar ul{
+            overflow: auto;
+        }
+        .navbar li{
+            float: left;
+            list-style: none;
+            margin: 11px;
+            padding: 12px;
+        }
+        .navbar li a{
+            padding: 2px;
+            text-decoration: none;
+            font-size: large;
+            font-weight: bold;
+        }
+        .navbar li a:hover{
+            color: rgb(226, 6, 6);
+        }
+        #logout{
+            float: right;
+            margin: 16px 50px 5px 5px;
+            padding: 5px 5px 5px 5px;
+            font-size: large;
+            background-color: rgb(207, 150, 150);
+        }
+        #image img{
+            float: left;
+            height: 40px;
+            width: 50px;
+            margin: 12px 12px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <div id="image">
+                    <img src="iiitb.jpeg">
+                </div>
+                <li><a href="">Register</a></li>
+                <li><a href="">Read</a></li>
+                <li><a href="">Update</a></li>
+                <li><a href="">Delete</a></li>
+                <div class="btn">
+                    <input type="button" id="logout" value="Logout">
+                </div>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>
