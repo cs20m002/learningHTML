@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grocery Store</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        .items{
+            width: 100px;
+            height: 100px;
+            
+        }
+        .fruits{
+            border: 3px solid #98a04d;
+            padding: 10px 10px;
+            margin: 10px 10px;
+        }
+        .container{
+            background-color: rgb(231, 243, 231);
+            width: 500px;
+            border: 3px solid #6a8a6a;
+            margin: auto;
+            text-align: center;
+        }
+        .names{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: bold;
+            color: rgb(29, 3, 3);
+            /* text-align: center; */
+        }
+        #apple{
+            float: right;
+            width: 45%;
+        }
+        #orange{
+            float: left;
+            width: 45%;
+        }
+        #banana{
+            /* float: left; */
+            clear: both;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Welcome to my Store</h2>
+        <div id="apple" class="fruits">
+            <img class="items" src="fruits/apple.png">
+            <p class="names">Apple</p>
+        </div>
+        <div id="orange" class="fruits">
+            <img class="items" src="fruits/orange.png">
+            <p class="names">Orange</p>
+        </div>
+        <div id="banana" class="fruits">
+            <img class="items" src="fruits/banana.png">
+            <p class="names">Banana</p>
+        </div>
+    </div>
+</body>
+</html>
