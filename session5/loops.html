@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops in JS</title>
+</head>
+<body>
+    <script>
+        let i;
+        // for(let i=0; i<3; i++){
+        //     console.log(i);
+        // }
+
+        let books = ['ISE','CSA','AI','CyberSecurity','DS'];
+        for (let index = 0; index < books.length; index++) {
+            const element = books[index];
+            console.log('Subject ' + element);
+        }
+        console.log("Executing foreach loop")
+        
+        books.forEach(element => {
+            console.log("Sem2 = " + element);
+        });
+
+        console.log("Executing for of loop")
+        
+        for (const element of books) {
+            console.log("Sem2 = " + element);
+        }
+        
+        console.log("Executing for in loop")
+
+        let student = {
+            name : "Aniket Kumar",
+            roll : "CS20M002",
+            institute : "IITT"
+        }
+
+        // for (const key in student) {
+        //     if (Object.hasOwnProperty.call(student, key)) {
+        //         const element = student[key];
+        //         console.log(element);
+        //     }
+        // }
+
+        for(const key in student){
+            console.log(`The ${key} of the student is ${student[key]}`);
+        }
+
+        // while loop
+        i=0;
+        while(i<5){
+            console.log(`${i} is less than 5`);
+            i++;
+        }
+        
+        // do while loop
+        i=10;
+        do{
+            console.log(`${i} is less than 5 inside do while loop `);
+            // console.log(i);
+        }while(i<5);
+    </script>
+</body>
+</html>
