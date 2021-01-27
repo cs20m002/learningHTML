@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetTimeOut/ClearTimeOut</title>
+</head>
+<body>
+    <div id="main" class="container">
+        This is a container 
+    </div>
+    <span id="time">
+        this is time
+    </span>
+    <script>
+        console.log("Working!!!");
+
+        // setTimeout --> Allow us to run a function once after interval of time
+        // clearTimeout --> Allow us to clear setTimeout before setTimeout call
+
+        // setInterval --> same as setTimeout but repeadly
+
+        function greet(fname, lname){
+            console.log("Hello" + " " + fname + " " + lname);
+        }
+        
+        // greet("Aniket", "Kumar");  Normal function call
+
+        // Using setTimeout 
+        // setTimeout(greet,8000,"Aniket","Kumar");
+        
+        // Wrong Way, it will not work
+        // setTimeout(greet("Aniket","Kumar"),3000); This is wrong way as it only take function name as first argument noy calling of function 
+        
+        // timeOut = setTimeout(greet,8000,"Aniket","Kumar");
+        // console.log(timeOut);
+        
+        // setInterval(greet,1000, "Aniket", "Kumar");
+        // intervalID = setInterval(greet,1000, "Aniket", "Kumar");
+        // clearInterval(intervalID);
+
+        function displayTime(){
+            time = new Date();
+            console.log(time);
+            document.getElementById('time').innerHTML = time;
+        }
+
+        setInterval(displayTime,1000);
+        </script>
+</body>
+</html>
