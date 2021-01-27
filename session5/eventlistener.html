@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventListener</title>
+    <style>
+        #btn{
+            background-color: red;
+            color: white;
+            padding: 10px 15px;
+            cursor: pointer;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="main" class="container">
+       <p id="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora corporis architecto iure id ipsam reiciendis impedit magnam ipsum est saepe repudiandae explicabo eligendi eaque dolores sapiente nostrum, aut vitae veritatis voluptates nulla hic nobis molestiae nemo minima. Nam ab corporis blanditiis quasi, recusandae, dolor facilis ducimus asperiores fugiat modi voluptatum maiores assumenda consequatur, amet dicta expedita culpa! Repellat quis quo vel, nihil adipisci voluptatum molestias nulla ad. Pariatur ipsa possimus, similique quas minus ipsum earum ducimus vero, atque illum consequatur cum eius autem, ut libero ab. Voluptatibus molestiae deserunt assumenda veniam delectus doloremque quaerat illo ipsa labore, totam vel ut incidunt, eaque explicabo dolor placeat ea animi aliquam quibusdam. Illum, ullam autem. Exercitationem nostrum alias vitae. Nihil, pariatur deserunt. Saepe voluptate quae laudantium officia nobis ad exercitationem voluptatem pariatur nesciunt quasi nostrum voluptas expedita perferendis aspernatur ipsum sit architecto accusamus explicabo id officiis, alias autem voluptates non voluptatibus! Cupiditate soluta autem, in labore rerum placeat ab repudiandae illum excepturi accusamus explicabo eum esse sapiente! Veritatis praesentium impedit reiciendis error omnis perferendis iusto, asperiores deleniti harum corporis obcaecati. Ex dignissimos ab nostrum officiis, inventore delectus incidunt aspernatur veritatis harum exercitationem nobis rem deleniti est porro nihil, mollitia quo vero enim? Blanditiis doloremque, natus minima facilis mollitia est ex? Minus, ipsa nostrum, perspiciatis, officia aut magni placeat earum quos quis cumque cum modi. Culpa, atque?</p>
+    </div>
+    <!-- <button id="btn" onclick="toggleHide()">Show/Hide</button> -->
+    <button id="btn">Show/Hide</button>
+    
+    <script>
+
+        // traditional style
+        // function toggleHide(){
+        //     let btn = document.getElementById("btn");
+        //     let para = document.getElementById("para");
+            
+        //     if(para.style.display != "none"){
+        //         para.style.display = "none";
+        //     }
+        //     else{
+        //         para.style.display = "block";
+        //     }
+        // }
+
+        // Doing same using event listner
+        let btn = document.getElementById("btn");
+        let para = document.getElementById("para");
+        btn.addEventListener("click", function(){
+            if(para.style.display != "none"){
+                para.style.display = "none";
+            }
+            else{
+                para.style.display = "block";
+            }
+        })
+
+        para.addEventListener('mouseover', function(){
+            // alert("Mouse Inside Para");
+            console.log("Mouse Inside Para");
+        });
+        para.addEventListener('mouseout', function(){
+            // alert("Mouse Outside Para");
+            console.log("Mouse Outside Para");
+        });
+
+    </script>
+</body>
+</html>
