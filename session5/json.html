@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JSON Tutorial</title>
+</head>
+<body>
+    <div id="main" class="container">
+        This is a container.
+    </div>
+    <script>
+        // javascript object
+        let jsonObj = {
+            name : "Aniket",
+            channel : "soil",
+            freind : "neha",
+            food : "pizza"
+        }
+
+        console.log(jsonObj);
+
+        // converting valid JS object to string 
+        let myJSONStr = JSON.stringify(jsonObj);
+        console.log(myJSONStr);
+
+        // string manipulation
+        myJSONStr = myJSONStr.replace("pizza", "momo");
+        console.log(myJSONStr);
+
+        // converting valid string to JS object
+        newjsonObj = JSON.parse(myJSONStr);
+        console.log(newjsonObj);
+
+    </script>
+</body>
+</html>
