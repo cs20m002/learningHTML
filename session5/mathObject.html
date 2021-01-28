@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MathObject in JS</title>
+</head>
+<body>
+    <div id="main" class="container">
+        This is math object tutroial.
+    </div>
+    <script>
+        let m = Math;
+        console.log(m)
+
+        // Printing the constant from Math object
+        console.log("The vlaue of Math.E is : " , m.E)
+        console.log("The vlaue of Math.PI is : " , m.PI)
+        console.log("The vlaue of Math.LN2 is : " , m.LN2)
+        console.log("The vlaue of Math.SQRT2 is : " , m.SQRT2)
+
+        // Printing the function from Math object 
+        let a = 43.533
+        let b = 12
+        console.log("The value of a and b is : ", a, b)
+        console.log("The value of a and b rounded is : ", Math.round(a), Math.round(b))
+
+        // square root and round
+        console.log("3 raised to the power 4 is ", Math.pow(3,4))
+        console.log("Square root of 121 is ", Math.sqrt(121))
+        console.log("Square root of 224 is ", Math.sqrt(224))
+        console.log("Square root of 224 is ", Math.round(Math.sqrt(224)))
+        
+        // ceil and floor 
+        console.log("Floor of 5.4 and 5.6 is ", Math.floor(5.4), Math.floor(5.6))
+        console.log("Ceil of 5.4 and 5.6 is ", Math.ceil(5.4), Math.ceil(5.6))
+
+        // abs function
+        console.log("the absolute value of -3 and 6 is ", Math.abs(-3), Math.abs(6))
+
+        // min and max
+        console.log("min of 7,9 and max of 3,10 are " , Math.min(7,9), Math.max(3,10))
+        console.log("min of 7,9,3,10 are ", Math.min(7,9,3,10))
+        console.log("max of 7,9,3,10 are ", Math.max(7,9,3,10))
+
+        // Generating a random number
+        console.log("Random number generation is Math.random() its ranges [0,1] :", Math.random())
+    </script>
+</body>
+</html>
