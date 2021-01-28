@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NavBar</title>
+    <style>
+        .navbar {
+            color: cyan;
+            display: block;
+            background-color: darkblue;
+        }
+        /*
+        .navbar ul{
+            float: right;
+        } */
+        .navbar-brand img{
+            width: 100px;
+            height: 80px;
+        }
+        .navbar-nav li{
+            float: left;
+        }
+        .nav-item{
+            list-style: none;
+        }
+        .nav-link{
+            text-decoration: none;
+            padding: 10px;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">      
+        <!-- Links -->
+        <ul class="navbar-nav" >
+        <li id="nav-logo" class="nav-item">
+            <a class="navbar-brand" href="#">
+                <img src="iiitb.jpeg">
+            </a>
+        </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Register</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Read</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Update</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Delete</a>
+          </li>
+          <li class="nav-item">
+            <input id="logout" type="button" value="Logout">
+          </li>
+        </ul>
+      </nav>
+</body>
+</html>
