@@ -1,0 +1,20 @@
+{
+  "name": "myfirstpacakge",
+  "version": "1.0.0",
+  "description": "this is my first ever node module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "awesome"
+  ],
+  "author": "aniket kumar",
+  "license": "ISC",
+  "dependencies": {
+    "slugify": "^1.4.6"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}
