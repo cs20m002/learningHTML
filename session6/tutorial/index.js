@@ -13,7 +13,7 @@ const server = http.createServer((req,res)=>{
     console.log(req.url);
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
-    if (req.url == '/'){
+    if (req.url == '/home' || req.url == '/'){
         res.end(home);
     }
     else if (req.url == '/about'){
@@ -27,7 +27,7 @@ const server = http.createServer((req,res)=>{
     }
     else{
         res.statusCode = 404;
-        res.end("<h1>404 page not found");
+        res.end("<h1>404 page not found</h1>");
     }
 });
 
